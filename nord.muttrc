@@ -1,0 +1,44 @@
+# Nord Color Scheme for NeoMutt
+
+# Global defaults
+color normal          default        default
+color error           brightred      default
+color status          white          blue
+color message         brightgreen    default
+color search          yellow         default
+color attachment      brightmagenta  default
+color signature       cyan           default
+
+# Header
+color header          brightcyan     default       "^(From|To|Cc|Bcc|Reply-To)"
+color header          brightblue     default       "^Subject"
+color header          brightwhite    default       "^Date"
+
+# Index (email list)
+color index           white          default       "~R"        # Read
+color index           brightblue     default       "~N"        # New
+color index           brightcyan     default       "~U"        # Unread
+color index           yellow         default       "~F"        # Flagged
+color index           brightmagenta  default       "~T"        # Tagged
+
+# Quoted text in emails
+color quoted          blue           default
+color quoted1         cyan           default
+color quoted2         magenta        default
+color quoted3         brightmagenta  default
+
+# Tilde and markers
+color tilde           cyan           default
+color markers         black          cyan
+
+# Links and emails in the body
+color body            brightblue     default       "https?://[^ \"\t\r\n]+"
+color body            magenta        default       "[^ ]+@[^ ]+"
+
+# Sidebar (if supported, comment out if not)
+#set sidebar_visible = yes
+#set sidebar_width = 20
+#color sidebar_new     brightblue     default
+#color sidebar_current white          blue
+#color sidebar_marker  cyan           default
+
